@@ -6,14 +6,142 @@
         <link rel="stylesheets" href="css/stylesheet.css">
     </head>
     <body>
-        <li>
-            git init - turns directory into an empty git repository
-        </li>
-        <li>
-            git add - adds files to the staging area for git
-        </li>
-        <li>
-            git commit - record changes made to the files to a local repo
-        </li>
+        <h2 align="center">Git Commands Explained</h2>
+        <hr>
+        <p>
+            <h3>git init</h3>
+            <li>
+                This command turns a directory into an empty Git repository
+            </li>
+            <li>
+                It is the first step in creating a repository
+            </li>
+            <li>
+                Adding and committing files or directories is only possible after running this command
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git add</h3>
+            <li>
+                This command adds files to the staging area for Git
+            </li>
+            <li>
+                Before a file is available to commit to a respository, it needs to be added to the Git index (staging area)
+            </li>
+            <li>
+                It's possible to add entire directories, specific files or all unstaged files
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git commit</h3>
+            <li>
+                This command records changes made to the files to a local repository
+            </li>
+            <li>
+                It is considered best practice to include a message with each commit explaining the changes made in a commit. It helps
+                to find a particular change or understanding the changes.
+            </li>
+            <li>
+                Each commit has a unique ID
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git status</h3>
+            <li>
+                This command returns the current state of the repository. It will return the current working branch
+            </li>
+            <li>
+                If a file is in the staging area, but not committed, it shows with <i>git status</i>
+            </li>
+            <li>
+                If there are no changes it will return "nothing to commit, working directory clean"
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git config</h3>
+            <li>
+                With Git, there are many configurations and settings possible. <i>git config</i> is how to assign these settings.
+            </li>
+            <li>
+                Two important settings are user.name and user.email. 
+                These values set what email address and name commits will be from on a local computer
+            </li>
+            <li>
+                a <i>--global</i> flag is used to write the settings to all repositories on a computer. 
+                Without this flag, settings will only apply to the current repository
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git branch</h3>
+            <li>
+                This command is used to determine what branch the local repository is on
+            </li>
+            <li>
+                It is also used to add a new branch or delete a branch
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git checkout</h3>
+            <li>
+                This command is used to switch branches and start working in a different branch
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git merge</h3>
+            <li>
+                This command combines the changes from one branch to another branch. It integrates branges together
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git remote</h3>
+            <li>
+                This command is used to connect a local repository with a remote repository
+            </li>
+            <li>
+                A remote repository can have any name. It is common practice to name the remote repository <i>origin</i>.
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git clone</h3>
+            <li>
+                This command is used to create a local working copy of an existing remote repository
+            </li>
+            <li>
+                Cloning is the equivalent of <i>git init</i> when working with a remote repository
+            </li>
+            <li>
+                Git will create a directory locally with all files and repository history
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git pull</h3>
+            <li>
+                This command is used to get the latest version of a repository
+            </li>
+            <li>
+                It pulls the changes from the remote repository to the local computer
+            </li>
+        </p>
+        </br>
+        <p>
+            <h3>git push</h3>
+            <li>
+                This command sends local commits to the remote repository
+            </li>
+            <li>
+                <i>git push</i> requires two parameters: the remote repository and the branch that the push is for
+            </li>
+        </p>
+        </br>
     </body>
 </html>
